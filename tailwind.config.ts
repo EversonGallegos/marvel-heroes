@@ -15,7 +15,8 @@ const config: Config = {
       },
       boxShadow: {
         "dropdown": "0px 12px 16px -4px #10182814",
-        "xs": "0px 1px 2px 0px #1018280D"
+        "xs": "0px 1px 2px 0px #1018280D",
+        "sb": "6px 0px 18px 0px #0000000F"
       }
     },
     colors: {

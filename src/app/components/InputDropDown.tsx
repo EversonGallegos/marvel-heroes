@@ -1,6 +1,6 @@
 'use client';
 
-import { Caracter } from '@/types/Caracter'
+import { Caracter } from '@/app/types/Caracter'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import PersonIcon from '../assets/images/PersonIcon.svg';
