@@ -2,22 +2,23 @@
  
 import Button from '@/app/components/Button';
 import Input from '@/app/components/Input';
-import { authenticate } from '@/app/lib/actions';
+import { forgetAction } from '@/app/lib/actions';
+import { ChangeEvent, Dispatch, SetStateAction, useState } from 'react';
 import { useFormState } from 'react-dom';
-import LoginIcon from '@/app/assets/images/login.svg';
-import Escudo from '@/app/assets/images/escudo.svg';
-import Link from 'next/link';
-import Image from 'next/image';
  
 export default function Page() {
-  const [_, dispatch] = useFormState(authenticate, undefined)
+  const [_, dispatch] = useFormState(forgetAction, undefined);
+  const [email, setEmail] = useState<string | undefined>(undefined)
+
   const inputEmailIcon = {
     default: 'bg-at',
     focus: 'focus:bg-at-blue'
   }
-  const inputPasswordIcon = {
-    default: 'bg-eyes',
-    focus: 'focus:bg-eyes-blue'
+  function handleChange(
+    event: ChangeEvent<HTMLInputElement>,
+  ){
+    const { value } = event.target
+    setEmail(value);
   }
   return (
     <form action={dispatch}>
@@ -33,12 +34,13 @@ export default function Page() {
           type='email'
           placeholder='informe seu e-mail'
           icon={inputEmailIcon}
+          onChange={(e) => handleChange(e)}
         />
       </div>
       <Button
         text='enviar link'
         extraClasses='mb-5'
-        disabled={true}
+        disabled={!!!email}
        />
     </form>
   )

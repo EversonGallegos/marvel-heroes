@@ -1,7 +1,7 @@
 import React, { ButtonHTMLAttributes } from 'react'
 
 
-type Props = { 
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> { 
   name: string,
   type: string,
   placeholder: string,
@@ -18,8 +18,9 @@ const Input = ({
     placeholder,
     icon = { default: '', focus: ''},
     extraClasses = '',
-    required=true
-  } : Props) => {
+    required=true,
+    ...props
+  } : InputProps) => {
   return (
     <input
       className={
@@ -33,6 +34,7 @@ const Input = ({
       name={name}
       placeholder={placeholder}
       required={required}
+      {...props}
     />
   )
 }
