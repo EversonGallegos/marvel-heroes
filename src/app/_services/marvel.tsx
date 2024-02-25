@@ -1,4 +1,4 @@
-import { Caracter } from "@/app/types/caracter";
+import { Caracter } from "@/app/_types/caracter";
 import axios, { AxiosInstance } from "axios";
 import { md5 } from "js-md5";
 

@@ -1,4 +1,4 @@
-import { Marvel } from '@/app/services/marvel';
+import { Marvel } from '@/app/_services/marvel';
  
 export default async function Page() {
   const marvel = new Marvel()

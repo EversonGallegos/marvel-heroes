@@ -1,8 +1,8 @@
 'use client'
  
-import Button from '@/app/components/Button';
-import Input from '@/app/components/Input';
-import { forgetAction } from '@/app/lib/actions';
+import Button from '@/app/_components/Button';
+import Input from '@/app/_components/Input';
+import { forgetAction } from '@/app/_lib/actions';
 import { ChangeEvent, Dispatch, SetStateAction, useState } from 'react';
 import { useFormState } from 'react-dom';
  

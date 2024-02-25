@@ -1,7 +1,7 @@
 'use client';
 
-import Button from '@/app/components/Button'
-import { handleRedirect } from '@/app/lib/actions';
+import Button from '@/app/_components/Button'
+import { handleRedirect } from '@/app/_lib/actions';
 import React from 'react'
 
 const Page = () => {
