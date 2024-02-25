@@ -1,3 +1,5 @@
+import { CaracterThumbnail } from "./caracter_thumbnail"
+
 export type Caracter =  {
   id: number,
   name: string,
@@ -10,10 +12,7 @@ export type Caracter =  {
       url: string
     }
   ],
-  thumbnail: {
-    path: string,
-    extension: string
-  },
+  thumbnail: CaracterThumbnail,
   comics: {
     available: number,
     returned: number,
