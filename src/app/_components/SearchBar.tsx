@@ -1,5 +1,5 @@
 import React from 'react'
-import Busca from '../assets/images/busca.svg';
+import Busca from '../_assets/images/busca.svg';
 import Image from 'next/image';
 import { Epilogue } from "next/font/google";
 

@@ -4,8 +4,8 @@ import Button from '@/app/_components/Button';
 import Input from '@/app/_components/Input';
 import { authenticate } from '@/app/_lib/actions';
 import { useFormState } from 'react-dom';
-import LoginIcon from '@/app/assets/images/login.svg';
-import Escudo from '@/app/assets/images/escudo.svg';
+import LoginIcon from '@/app/_assets/images/login.svg';
+import Escudo from '@/app/_assets/images/escudo.svg';
 import Link from 'next/link';
 import Image from 'next/image';
  

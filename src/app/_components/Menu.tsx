@@ -1,7 +1,7 @@
 import React from 'react'
-import DashbordIcon from '@/app/assets/images/menu/dashboard.svg';
-import ProfileIcon from '@/app/assets/images/menu/perfil.svg'
-import LogoutIcon from '@/app/assets/images/menu/corner-up-left.svg';
+import DashbordIcon from '@/app/_assets/images/menu/dashboard.svg'
+import ProfileIcon from '@/app/_assets/images/menu/perfil.svg'
+import LogoutIcon from '@/app/_assets/images/menu/corner-up-left.svg';
 import MenuButton from './MenuButton';
 import GroupSideBar from './GroupSideBar';
 

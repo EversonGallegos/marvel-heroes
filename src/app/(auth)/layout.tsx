@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import LogoWhite from "@/app/assets/images/logo_white.svg";
+import LogoWhite from "@/app/_assets/images/logo_white.svg";
 import { Epilogue } from 'next/font/google'
 const epilogue = Epilogue({subsets: ['latin']});
 

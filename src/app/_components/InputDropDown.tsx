@@ -3,9 +3,9 @@
 import { Caracter } from '@/app/types/Caracter'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import PersonIcon from '../assets/images/PersonIcon.svg';
-import Chevron from '../assets/images/chevron.svg';
-import Check from '../assets/images/check.svg';
+import PersonIcon from '../_assets/images/PersonIcon.svg';
+import Chevron from '../_assets/images/chevron.svg';
+import Check from '../_assets/images/check.svg';
 
 const InputDropDown = ({ list } : Readonly<{ 
   list: Caracter [],

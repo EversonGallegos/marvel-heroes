@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Logo from '../assets/images/logo.svg'
+import Logo from '../_assets/images/logo.svg'
 import Menu from './Menu'
 import GroupSideBar from './GroupSideBar'
 
