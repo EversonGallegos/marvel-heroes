@@ -10,18 +10,25 @@ const Pagination = ({
     maxPages: number
   }) => {
 
+  const numberButtons: number[] = []
+
+  for(let i = 1; i <=  maxPages; i++){
+    numberButtons.push(i)
+  }
+
   return (
     <div className='flex'>
       <ButtonPagination onClick={dispatch} action={{ type: 'decrement', maxPages }}>
         Anterior
       </ButtonPagination>
       {
-        new Array(maxPages).fill(null).map((_, index) => {
-         return (
-          <ButtonPagination onClick={dispatch} action={{ type: index + 1, maxPages }} key={crypto.randomUUID()}>
-            {index+1}
-          </ButtonPagination>)
-        })
+        numberButtons.map((number) => <ButtonPagination 
+          onClick={dispatch} 
+          action={{ type: number, maxPages }} 
+          key={crypto.randomUUID()}
+        >
+          {number}
+        </ButtonPagination>)
       }
       <ButtonPagination onClick={dispatch} action={{ type: 'increment', maxPages}}>
         Seguinte
